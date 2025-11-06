@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Brain, TrendingUp, Package, Scan } from "lucide-react";
 import BeforeAfter from "@/components/BeforeAfter";
 import AISuggestions from "@/components/AISuggestions";
+import ProactiveAlerts from "@/components/ProactiveAlerts";
 
 const Index = () => {
   return (
@@ -86,10 +87,13 @@ const Index = () => {
         {/* Before/After Section */}
         <BeforeAfter />
 
-        {/* AI Suggestions Section */}
-        <AISuggestions />
+      {/* AI Suggestions Section */}
+      <AISuggestions />
 
-        {/* CTA Section */}
+      {/* Proactive Alerts Section */}
+      <ProactiveAlerts />
+
+      {/* CTA Section */}
         <section className="container mx-auto px-4 py-16 text-center">
           <div className="max-w-3xl mx-auto animate-fade-in">
             <p className="text-2xl md:text-3xl font-bold mb-8 text-foreground leading-relaxed">
