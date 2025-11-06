@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Brain, TrendingUp, Package, Scan } from "lucide-react";
+import BeforeAfter from "@/components/BeforeAfter";
 
 const Index = () => {
   return (
@@ -80,6 +81,9 @@ const Index = () => {
             </Card>
           </div>
         </section>
+
+        {/* Before/After Section */}
+        <BeforeAfter />
 
         {/* CTA Section */}
         <section className="container mx-auto px-4 py-16 text-center">
