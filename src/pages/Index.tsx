@@ -4,6 +4,7 @@ import { Brain, TrendingUp, Package, Scan } from "lucide-react";
 import WarehouseCrisis from "@/components/WarehouseCrisis";
 import WarehouseDashboard from "@/components/WarehouseDashboard";
 import FinancialImpact from "@/components/FinancialImpact";
+import { FadeInSection } from "@/components/FadeInSection";
 
 const Index = () => {
   return (
@@ -26,50 +27,54 @@ const Index = () => {
 
         {/* Description Block */}
         <section className="container mx-auto px-4 pb-16">
-          <div className="max-w-4xl mx-auto animate-slide-up">
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                Convertimos información en acción: combinamos modelos predictivos de IA y análisis en tiempo real para entender al consumidor, anticipar la demanda y optimizar la rentabilidad de cada producto.
-              </p>
-            </Card>
-          </div>
+          <FadeInSection delay={200}>
+            <div className="max-w-4xl mx-auto">
+              <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  Convertimos información en acción: combinamos modelos predictivos de IA y análisis en tiempo real para entender al consumidor, anticipar la demanda y optimizar la rentabilidad de cada producto.
+                </p>
+              </Card>
+            </div>
+          </FadeInSection>
         </section>
 
-      {/* Before/After Section */}
-      {/*  <BeforeAfter />  */}
-
-      {/* AI Suggestions Section */}
-      {/*<AISuggestions />*/}
-
-      {/* Proactive Alerts Section */}
-      {/*<ProactiveAlerts />*/}
-
       {/* Warehouse Crisis Section */}
-      <WarehouseCrisis />
+      <FadeInSection>
+        <WarehouseCrisis />
+      </FadeInSection>
 
       {/* Warehouse Dashboard Section */}
-      <WarehouseDashboard />
+      <FadeInSection>
+        <WarehouseDashboard />
+      </FadeInSection>
 
       {/* Financial Impact Section */}
-      <FinancialImpact />
+      <FadeInSection>
+        <FinancialImpact />
+      </FadeInSection>
 
       {/* CTA Section */}
         <section className="container mx-auto px-4 py-16 text-center">
-          <div className="max-w-3xl mx-auto animate-fade-in">
-            <p className="text-2xl md:text-3xl font-bold mb-8 text-foreground leading-relaxed">
-              Innovación, predicción y rendimiento.<br />
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Todo en un solo sistema impulsado por IA.
-              </span>
-            </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-12 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.7)] transition-all duration-300"
-            >
-              <Brain className="mr-2 h-6 w-6" />
-              Probar Demo
-            </Button>
-          </div>
+          <FadeInSection>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl font-bold mb-8 text-foreground leading-relaxed">
+                Innovación, predicción y rendimiento.<br />
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  Todo en un solo sistema impulsado por IA.
+                </span>
+              </p>
+              <Button 
+                size="lg" 
+                className="text-lg px-12 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.7)] transition-all duration-300"
+                asChild
+              >
+                <a href="https://stockflow-predict.lovable.app/" target="_blank" rel="noopener noreferrer">
+                  <Brain className="mr-2 h-6 w-6" />
+                  Probar Demo
+                </a>
+              </Button>
+            </div>
+          </FadeInSection>
         </section>
 
         {/* Footer */}

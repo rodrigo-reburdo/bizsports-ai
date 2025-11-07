@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calculator, TrendingUp, DollarSign, Package, ShoppingCart, Zap } from "lucide-react";
+import { FadeInSection } from "@/components/FadeInSection";
 
 const FinancialImpact = () => {
   return (
@@ -20,7 +21,8 @@ const FinancialImpact = () => {
 
       {/* Calculation Breakdown */}
       <div className="max-w-5xl mx-auto mb-16 space-y-6">
-        <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/30 animate-slide-up">
+        <FadeInSection>
+          <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/30">
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
             <Package className="w-6 h-6 text-primary" />
             Desglose de Beneficios Anuales
@@ -113,9 +115,11 @@ const FinancialImpact = () => {
             </div>
           </div>
         </Card>
+        </FadeInSection>
 
         {/* Total Benefit */}
-        <Card className="p-8 bg-gradient-to-br from-primary/20 to-accent/20 border-primary/50 animate-slide-up">
+        <FadeInSection delay={200}>
+          <Card className="p-8 bg-gradient-to-br from-primary/20 to-accent/20 border-primary/50">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4 flex items-center justify-center gap-3">
               <DollarSign className="w-8 h-8 text-primary" />
@@ -129,6 +133,7 @@ const FinancialImpact = () => {
             </p>
           </div>
         </Card>
+        </FadeInSection>
       </div>
 
       {/* Scenarios */}
@@ -136,7 +141,8 @@ const FinancialImpact = () => {
         <h3 className="text-3xl font-bold mb-8 text-center">Escenarios de Implementación</h3>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Conservative */}
-          <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/50 transition-all animate-slide-up">
+          <FadeInSection delay={0}>
+            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-accent/50 transition-all">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-5 h-5 text-accent" />
               <Badge variant="outline" className="bg-accent/10 text-accent border-accent/30">
@@ -150,9 +156,11 @@ const FinancialImpact = () => {
               Implementación parcial y gradual. Beneficios medibles desde el primer trimestre.
             </p>
           </Card>
+          </FadeInSection>
 
           {/* Realistic */}
-          <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/50 hover:border-primary transition-all animate-slide-up ring-2 ring-primary/20">
+          <FadeInSection delay={100}>
+            <Card className="p-6 bg-card/50 backdrop-blur-sm border-primary/50 hover:border-primary transition-all ring-2 ring-primary/20">
             <div className="flex items-center gap-2 mb-4">
               <TrendingUp className="w-5 h-5 text-primary" />
               <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
@@ -166,9 +174,11 @@ const FinancialImpact = () => {
               Implementación completa en 12 meses. ROI comprobado en casos similares.
             </p>
           </Card>
+          </FadeInSection>
 
           {/* Optimistic */}
-          <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all animate-slide-up">
+          <FadeInSection delay={200}>
+            <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all">
             <div className="flex items-center gap-2 mb-4">
               <ShoppingCart className="w-5 h-5 text-primary" />
               <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30">
@@ -182,12 +192,14 @@ const FinancialImpact = () => {
               Adopción acelerada con integración omnicanal. Máximo potencial de mercado.
             </p>
           </Card>
+          </FadeInSection>
         </div>
       </div>
 
       {/* Key Metrics Table */}
       <div className="max-w-5xl mx-auto">
-        <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 animate-slide-up">
+        <FadeInSection>
+          <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
           <h3 className="text-2xl font-bold mb-6 text-center">Métricas Clave del Análisis</h3>
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -222,6 +234,7 @@ const FinancialImpact = () => {
             </table>
           </div>
         </Card>
+        </FadeInSection>
       </div>
     </section>
   );
