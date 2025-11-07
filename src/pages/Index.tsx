@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Brain, TrendingUp, Package, Scan } from "lucide-react";
 import WarehouseCrisis from "@/components/WarehouseCrisis";
-import WarehouseDashboard from "@/components/WarehouseDashboard";
 import FinancialImpact from "@/components/FinancialImpact";
 import { FadeInSection } from "@/components/FadeInSection";
 
@@ -15,16 +14,38 @@ const Index = () => {
       {/* Background Grid Pattern */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#FF7819_1px,transparent_1px),linear-gradient(to_bottom,#FF7819_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] pointer-events-none" />
       
+      {/* Estilos inline para animación de glow */}
+      <style>{`
+        @keyframes pulse-glow {
+          0%, 100% {
+            filter: drop-shadow(0 0 40px rgba(255, 120, 25, 0.6));
+          }
+          50% {
+            filter: drop-shadow(0 0 80px rgba(255, 120, 25, 0.9));
+          }
+        }
+        .animate-pulse-glow {
+          animation: pulse-glow 3s ease-in-out infinite;
+        }
+      `}</style>
+      
       <div className="relative">
         {/* Hero Section */}
         <section className="container mx-auto px-4 pt-20 pb-16 text-center">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent leading-tight">
+            {/* Subtítulo mejorado */}
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground/90 max-w-3xl mx-auto mb-12 font-medium tracking-wide">
+              Transformamos la Gestión de Stock y Ventas con{" "}
+              <span className="text-primary font-bold">Inteligencia Artificial</span>
+            </p>
+
+            {/* Título mejorado con efectos visuales más potentes */}
+            <h1 className="text-6xl md:text-8xl lg:text-8xl font-black mb-1 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent leading-tight tracking-tight animate-pulse-glow">
               SKT: Stock Optimizado
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Transformamos la gestión de stock y ventas con inteligencia artificial
-            </p>
+            
+            {/* Línea decorativa debajo del título */}
+            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto opacity-80" />
           </div>
         </section>
 
@@ -46,10 +67,10 @@ const Index = () => {
         <WarehouseCrisis />
       </FadeInSection>
 
-      {/* Warehouse Dashboard Section */}
+      {/* Warehouse Dashboard Section 
       <FadeInSection>
         <WarehouseDashboard />
-      </FadeInSection>
+      </FadeInSection> */}
 
       {/* Financial Impact Section */}
       <FadeInSection>
