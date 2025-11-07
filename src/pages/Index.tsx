@@ -8,9 +8,12 @@ import { FadeInSection } from "@/components/FadeInSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen text-foreground overflow-x-hidden relative">
+      {/* Gradient Background */}
+      <div className="fixed inset-0 bg-gradient-to-br from-black via-[#110802] to-[#220F02]" />
+      
       {/* Background Grid Pattern */}
-      <div className="fixed inset-0 bg-[linear-gradient(to_right,#1a1a2e_1px,transparent_1px),linear-gradient(to_bottom,#1a1a2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] pointer-events-none" />
+      <div className="fixed inset-0 bg-[linear-gradient(to_right,#FF7819_1px,transparent_1px),linear-gradient(to_bottom,#FF7819_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)] pointer-events-none" />
       
       <div className="relative">
         {/* Hero Section */}
@@ -65,7 +68,7 @@ const Index = () => {
               </p>
               <Button 
                 size="lg" 
-                className="text-lg px-12 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.7)] transition-all duration-300"
+                className="text-lg px-12 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-[0_0_30px_rgba(255,120,25,0.5)] hover:shadow-[0_0_50px_rgba(255,120,25,0.7)] transition-all duration-300"
                 asChild
               >
                 <a href="https://stockflow-predict.lovable.app/" target="_blank" rel="noopener noreferrer">
