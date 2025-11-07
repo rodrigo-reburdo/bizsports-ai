@@ -6,6 +6,7 @@ import AISuggestions from "@/components/AISuggestions";
 import ProactiveAlerts from "@/components/ProactiveAlerts";
 import WarehouseCrisis from "@/components/WarehouseCrisis";
 import WarehouseDashboard from "@/components/WarehouseDashboard";
+import FinancialImpact from "@/components/FinancialImpact";
 
 const Index = () => {
   return (
@@ -100,6 +101,9 @@ const Index = () => {
 
       {/* Warehouse Dashboard Section */}
       <WarehouseDashboard />
+
+      {/* Financial Impact Section */}
+      <FinancialImpact />
 
       {/* CTA Section */}
         <section className="container mx-auto px-4 py-16 text-center">
