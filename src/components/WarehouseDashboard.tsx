@@ -46,7 +46,7 @@ const WarehouseDashboard = () => {
         <Card className="p-8 bg-destructive/10 border-destructive/50">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <h4 className="text-sm text-muted-foreground mb-2">Pérdida de Ingresos</h4>
+              <h4 className="text-sm text-muted-foreground mb-2">Pérdida de Ingresos </h4>
               <p className="text-4xl font-bold text-destructive mb-2">$418M</p>
               <span className="text-sm text-muted-foreground">Anualmente por quiebres de stock</span>
             </div>
