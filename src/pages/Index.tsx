@@ -19,10 +19,10 @@ const Index = () => {
         <section className="container mx-auto px-4 pt-20 pb-16 text-center">
           <div className="animate-fade-in">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent leading-tight">
-              🧠 Hackatón IA 2025
+              SKT: Stock Optimizado
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Usamos inteligencia artificial para predecir, simular y optimizar decisiones comerciales y deportivas.
+              Transformamos la gestión de stock y ventas con inteligencia artificial
             </p>
           </div>
         </section>
@@ -32,69 +32,20 @@ const Index = () => {
           <div className="max-w-4xl mx-auto animate-slide-up">
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50">
               <p className="text-lg text-foreground/90 leading-relaxed">
-                La idea del hackatón es resolver un problema usando IA. Desarrollamos un sistema que predice stock, 
-                identifica eventos especiales (como días clave o promociones) y analiza cómo le va al Club Talleres 
-                de Córdoba en lo deportivo, para entender cómo los resultados influyen en las ventas.
+                Convertimos información en acción: combinamos modelos predictivos de IA y análisis en tiempo real para entender al consumidor, anticipar la demanda y optimizar la rentabilidad de cada producto.
               </p>
             </Card>
           </div>
         </section>
 
-        {/* Feature Cards */}
-        <section className="container mx-auto px-4 pb-16">
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {/* Card 1 */}
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] animate-slide-up group">
-              <div className="mb-6 p-4 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
-                <TrendingUp className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
-                1️⃣ Simulador "What-if" y Sandbox financiero
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Permite simular promociones, roturas de suministro o cambios en lead time, y ver su impacto en stock, 
-                ventas y cash en USD antes de ejecutar.
-              </p>
-            </Card>
-
-            {/* Card 2 */}
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] animate-slide-up [animation-delay:200ms] group">
-              <div className="mb-6 p-4 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
-                <Package className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
-                2️⃣ Gestión de obsolescencia y rotación
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Detecta early warnings para liquidación, bundling o repricing. Integra búsqueda visual con 
-                realidad aumentada (SKU lifecycle).
-              </p>
-            </Card>
-
-            {/* Card 3 */}
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] animate-slide-up [animation-delay:400ms] group">
-              <div className="mb-6 p-4 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
-                <Scan className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
-                3️⃣ Picking asistido con AR
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                AR para búsqueda rápida en almacén, app móvil offline para campo y rutas optimizadas de picking 
-                (pick-to-light + mobile).
-              </p>
-            </Card>
-          </div>
-        </section>
-
-        {/* Before/After Section */}
-        <BeforeAfter />
+      {/* Before/After Section */}
+      {/*  <BeforeAfter />  */}
 
       {/* AI Suggestions Section */}
-      <AISuggestions />
+      {/*<AISuggestions />*/}
 
       {/* Proactive Alerts Section */}
-      <ProactiveAlerts />
+      {/*<ProactiveAlerts />*/}
 
       {/* Warehouse Crisis Section */}
       <WarehouseCrisis />

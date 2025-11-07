@@ -47,7 +47,7 @@ const AISuggestions = () => {
                     </Badge>
                   </div>
                   <p className="font-semibold text-foreground mb-2">
-                    💡 "Talleres juega clásico en 48hs: Lanzar campaña 2x1 en indumentaria"
+                    💡 "Talleres juega clásico en 48hs: Lanzar campaña en indumentaria"
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Predicción: +180% en ventas de camisetas. Stock disponible: 450 unidades. 
