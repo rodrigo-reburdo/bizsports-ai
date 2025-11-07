@@ -122,11 +122,10 @@ const FinancialImpact = () => {
           <Card className="p-8 bg-gradient-to-br from-primary/20 to-accent/20 border-primary/50">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4 flex items-center justify-center gap-3">
-              <DollarSign className="w-8 h-8 text-primary" />
               Beneficio Total Anual Estimado
             </h3>
             <div className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              $10.779.529.552
+              $4.200 M
             </div>
             <p className="text-lg text-muted-foreground">
               $115M (ahorro) + $4.000M (ventas) + $6.665M (promociones)
