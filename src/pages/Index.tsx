@@ -4,6 +4,8 @@ import { Brain, TrendingUp, Package, Scan } from "lucide-react";
 import BeforeAfter from "@/components/BeforeAfter";
 import AISuggestions from "@/components/AISuggestions";
 import ProactiveAlerts from "@/components/ProactiveAlerts";
+import WarehouseCrisis from "@/components/WarehouseCrisis";
+import WarehouseDashboard from "@/components/WarehouseDashboard";
 
 const Index = () => {
   return (
@@ -92,6 +94,12 @@ const Index = () => {
 
       {/* Proactive Alerts Section */}
       <ProactiveAlerts />
+
+      {/* Warehouse Crisis Section */}
+      <WarehouseCrisis />
+
+      {/* Warehouse Dashboard Section */}
+      <WarehouseDashboard />
 
       {/* CTA Section */}
         <section className="container mx-auto px-4 py-16 text-center">
