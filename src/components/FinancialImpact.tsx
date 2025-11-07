@@ -222,32 +222,6 @@ const FinancialImpact = () => {
             </table>
           </div>
         </Card>
-
-        {/* Interpretation */}
-        <Card className="p-8 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/30 mt-8 animate-slide-up">
-          <h3 className="text-xl font-bold mb-4">💡 Interpretación</h3>
-          <div className="space-y-3 text-muted-foreground">
-            <p>
-              <strong className="text-foreground">Escenario Conservador:</strong> Incluso con adopción parcial, el retorno supera los <span className="text-accent font-semibold">$4.700 millones anuales</span>.
-            </p>
-            <p>
-              <strong className="text-foreground">Escenario Realista:</strong> Con implementación completa, el impacto alcanza <span className="text-primary font-semibold">$10.700 millones al año</span>, liberando capital y optimizando ventas.
-            </p>
-            <p>
-              <strong className="text-foreground">Escenario Optimista:</strong> La máxima integración puede generar más de <span className="text-primary font-semibold">$16.800 millones anuales</span>.
-            </p>
-          </div>
-          <div className="mt-6 p-4 bg-background/50 rounded-lg border border-primary/20">
-            <p className="text-sm text-foreground">
-              <strong>El beneficio proviene de tres frentes clave:</strong>
-            </p>
-            <ul className="mt-2 space-y-1 text-sm text-muted-foreground list-disc list-inside">
-              <li>Menor capital inmovilizado (inventario más eficiente)</li>
-              <li>Aumento de ventas (reducción de quiebres y mejor forecast)</li>
-              <li>Promociones más rentables (IA ajusta timing, productos y descuentos)</li>
-            </ul>
-          </div>
-        </Card>
       </div>
     </section>
   );
