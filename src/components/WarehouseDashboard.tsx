@@ -6,7 +6,7 @@ const WarehouseDashboard = () => {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-16 animate-fade-in">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Análisis de Rendimiento del Almacén
+          Análisis de Rendimiento de deposito
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Compara tu estado actual vs. resultados con estrategia optimizada
@@ -47,12 +47,12 @@ const WarehouseDashboard = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-sm text-muted-foreground mb-2">Pérdida de Ingresos</h4>
-              <p className="text-4xl font-bold text-destructive mb-2">$1.2M</p>
+              <p className="text-4xl font-bold text-destructive mb-2">$418M</p>
               <span className="text-sm text-muted-foreground">Anualmente por quiebres de stock</span>
             </div>
             <div>
               <h4 className="text-sm text-muted-foreground mb-2">Horas Extra</h4>
-              <p className="text-4xl font-bold text-destructive mb-2">1,840</p>
+              <p className="text-4xl font-bold text-destructive mb-2">1,340</p>
               <span className="text-sm text-muted-foreground">Mensuales por ineficiencia</span>
             </div>
             <div>
@@ -98,7 +98,7 @@ const WarehouseDashboard = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-sm text-muted-foreground mb-2">Recuperación de Ingresos</h4>
-              <p className="text-4xl font-bold text-primary mb-2">$1.1M</p>
+              <p className="text-4xl font-bold text-primary mb-2">$292M</p>
               <span className="text-sm text-muted-foreground">Anualmente por mejor disponibilidad</span>
             </div>
             <div>

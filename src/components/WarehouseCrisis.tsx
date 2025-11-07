@@ -6,12 +6,8 @@ const WarehouseCrisis = () => {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-16 animate-fade-in">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-destructive/20 border border-destructive/50 mb-6 animate-pulse-glow">
-          <AlertTriangle className="w-4 h-4 text-destructive" />
-          <span className="text-sm font-medium">Problemas Críticos de Gestión de Almacén</span>
-        </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
-          Tu Almacén Está <span className="bg-gradient-to-r from-destructive via-accent to-destructive bg-clip-text text-transparent">Perdiendo Dinero</span>
+          Del Caos Operativo a la <span className="bg-gradient-to-r from-destructive via-accent to-destructive bg-clip-text text-transparent">Eficiencia Predictiva</span>
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
           Cada día sin gestión adecuada cuesta miles en pérdidas de ingresos, trabajo desperdiciado y oportunidades perdidas.
@@ -25,7 +21,7 @@ const WarehouseCrisis = () => {
           <div className="animate-slide-up">
             <div className="flex items-center gap-3 mb-4">
               <Package className="w-8 h-8 text-destructive" />
-              <h3 className="text-3xl font-bold">Quiebres de Stock Crónicos</h3>
+              <h3 className="text-3xl font-bold">Quiebres de Stock</h3>
             </div>
             <p className="text-lg text-muted-foreground">
               Sin visibilidad en tiempo real del inventario, estás constantemente corriendo detrás. 
@@ -34,7 +30,7 @@ const WarehouseCrisis = () => {
           </div>
           <Card className="p-8 bg-destructive/10 border-destructive/50 text-center animate-slide-up">
             <p className="text-sm text-muted-foreground mb-4">Quiebres de Stock Diarios Promedio</p>
-            <AnimatedCounter value={47} className="text-6xl font-bold mb-4 bg-gradient-to-r from-destructive to-accent bg-clip-text text-transparent" />
+            <AnimatedCounter value={10} suffix="%" className="text-6xl font-bold mb-4 bg-gradient-to-r from-destructive to-accent bg-clip-text text-transparent" />
             <p className="text-lg font-semibold text-destructive">Productos no disponibles para clientes</p>
           </Card>
         </div>
@@ -43,13 +39,13 @@ const WarehouseCrisis = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Card className="p-8 bg-accent/10 border-accent/50 text-center animate-slide-up md:order-first">
             <p className="text-sm text-muted-foreground mb-4">Pérdida Anual de Ingresos</p>
-            <AnimatedCounter value={1.2} prefix="$" suffix="M" className="text-6xl font-bold mb-4 bg-gradient-to-r from-accent to-destructive bg-clip-text text-transparent" />
+            <AnimatedCounter value={418} prefix="$" suffix="M" className="text-6xl font-bold mb-4 bg-gradient-to-r from-accent to-destructive bg-clip-text text-transparent" />
             <p className="text-lg font-semibold text-accent">Solo por quiebres de stock y demoras</p>
           </Card>
           <div className="animate-slide-up">
             <div className="flex items-center gap-3 mb-4">
               <DollarSign className="w-8 h-8 text-accent" />
-              <h3 className="text-3xl font-bold">Hemorragia de Ingresos</h3>
+              <h3 className="text-3xl font-bold">Perdida de Ingresos</h3>
             </div>
             <p className="text-lg text-muted-foreground">
               Cada quiebre de stock es una venta perdida. Cada demora es un cliente eligiendo a tu competidor. 
@@ -72,32 +68,18 @@ const WarehouseCrisis = () => {
           </div>
           <Card className="p-8 bg-primary/10 border-primary/50 text-center animate-slide-up">
             <p className="text-sm text-muted-foreground mb-4">Horas Extra Mensuales</p>
-            <AnimatedCounter value={1840} className="text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" />
+            <AnimatedCounter value={550} className="text-6xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" />
             <p className="text-lg font-semibold text-primary">Horas de tiempo extra innecesario</p>
           </Card>
         </div>
 
-        {/* Fulfillment Rate */}
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <Card className="p-8 bg-destructive/10 border-destructive/50 text-center animate-slide-up md:order-first">
-            <p className="text-sm text-muted-foreground mb-4">Tasa de Cumplimiento Actual</p>
-            <AnimatedCounter value={73} suffix="%" className="text-6xl font-bold mb-4 bg-gradient-to-r from-destructive to-accent bg-clip-text text-transparent" />
-            <p className="text-lg font-semibold text-destructive">Pedidos entregados a tiempo</p>
-          </Card>
-          <div className="animate-slide-up">
-            <div className="flex items-center gap-3 mb-4">
-              <Activity className="w-8 h-8 text-destructive" />
-              <h3 className="text-3xl font-bold">Insatisfacción del Cliente</h3>
-            </div>
-            <p className="text-lg text-muted-foreground">
-              Entregas tardías, productos incorrectos y mala comunicación están destruyendo 
-              tu reputación y la lealtad de los clientes.
-            </p>
-          </div>
-        </div>
-
         {/* Picking Errors */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
+          <Card className="p-8 bg-accent/10 border-accent/50 text-center animate-slide-up">
+            <p className="text-sm text-muted-foreground mb-4">Errores de Picking Mensuales</p>
+            <AnimatedCounter value={156} className="text-6xl font-bold mb-4 bg-gradient-to-r from-accent to-destructive bg-clip-text text-transparent" />
+            <p className="text-lg font-semibold text-accent">Productos incorrectos enviados</p>
+          </Card>
           <div className="animate-slide-up">
             <div className="flex items-center gap-3 mb-4">
               <Users className="w-8 h-8 text-accent" />
@@ -108,11 +90,7 @@ const WarehouseCrisis = () => {
               de picking, devoluciones y pesadillas de servicio al cliente.
             </p>
           </div>
-          <Card className="p-8 bg-accent/10 border-accent/50 text-center animate-slide-up">
-            <p className="text-sm text-muted-foreground mb-4">Errores de Picking Mensuales</p>
-            <AnimatedCounter value={156} className="text-6xl font-bold mb-4 bg-gradient-to-r from-accent to-destructive bg-clip-text text-transparent" />
-            <p className="text-lg font-semibold text-accent">Productos incorrectos enviados</p>
-          </Card>
+          
         </div>
       </div>
     </section>
