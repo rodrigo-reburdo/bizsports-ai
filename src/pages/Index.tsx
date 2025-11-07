@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Brain, TrendingUp, Package, Scan } from "lucide-react";
-import BeforeAfter from "@/components/BeforeAfter";
-import AISuggestions from "@/components/AISuggestions";
-import ProactiveAlerts from "@/components/ProactiveAlerts";
 import WarehouseCrisis from "@/components/WarehouseCrisis";
 import WarehouseDashboard from "@/components/WarehouseDashboard";
 import FinancialImpact from "@/components/FinancialImpact";
