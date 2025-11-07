@@ -4,7 +4,7 @@ import { Brain, TrendingUp, Package, Scan } from "lucide-react";
 import WarehouseCrisis from "@/components/WarehouseCrisis";
 import FinancialImpact from "@/components/FinancialImpact";
 import { FadeInSection } from "@/components/FadeInSection";
-
+import WarehouseDashboard from "@/components/WarehouseDashboard";
 const Index = () => {
   return (
     <div className="min-h-screen text-foreground overflow-x-hidden relative">
@@ -67,10 +67,10 @@ const Index = () => {
           <WarehouseCrisis />
         </FadeInSection>
 
-        {/* Warehouse Dashboard Section 
+        {/* Warehouse Dashboard Section  */}
       <FadeInSection>
         <WarehouseDashboard />
-      </FadeInSection> */}
+      </FadeInSection>
 
         {/* Financial Impact Section */}
         <FadeInSection>
